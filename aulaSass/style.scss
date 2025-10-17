@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    border:  2px  solid blue;
+    h1 {
+      color: red;
+       font-family: "Roboto", sans-serif;
+    }
+
+    p {
+          color: green;
+    }
+
+    .teste {
+        color: blueviolet;
+    }
+}
+
+.card {
+    border: 2px solid #700;
+    width: 300px;
+    height: 300px;
+    background-image: url("https://recipesblob.oetker.com.br/assets/fa238f6f683d4e8aa6260db042e82f73/750x910/pizza-caseira-lucas-alencar.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    h2 {
+         font-family: "Roboto", sans-serif;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+}
