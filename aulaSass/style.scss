@@ -1,39 +1,59 @@
+@use "sass:map";
+$font-padrao: "Roboto", sans-serif;
+$tipos-pizza: (
+  "portuguesa":
+    url("https://recipesblob.oetker.com.br/assets/fa238f6f683d4e8aa6260db042e82f73/750x910/pizza-caseira-lucas-alencar.webp"),
+    "queijo":
+    url("https://images.unsplash.com/photo-1732223229355-95a1433404bf?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"),
+    "calabresa":
+    url("https://img.freepik.com/psd-gratuitas/deliciosa-pizza-de-pepperoni-uma-delicia-culinaria_632498-24206.jpg?semt=ais_hybrid&w=740&q=80"),
+    "frango":
+    url("https://www.cardapio.donnagulla.com.br/wp-content/uploads/2023/02/frango_milho.png"),
+);
+
+@mixin cardPizza($namePizza) {
+  border: 2px solid #700;
+  background-image: map.get($tipos-pizza, $namePizza);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
-    border:  2px  solid blue;
-    h1 {
-      color: red;
-       font-family: "Roboto", sans-serif;
-    }
-
-    p {
-          color: green;
-    }
-
-    .teste {
-        color: blueviolet;
-    }
 }
 
 .card {
-    border: 2px solid #700;
-    width: 300px;
-    height: 300px;
-    background-image: url("https://recipesblob.oetker.com.br/assets/fa238f6f683d4e8aa6260db042e82f73/750x910/pizza-caseira-lucas-alencar.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+//   background: map.get($tipos-pizza, 'frango')
 
-    h2 {
-         font-family: "Roboto", sans-serif;
-    }
-    
-    p {
-        font-size: 20px;
-    }
+  h2 {
+    font-family: "Roboto", sans-serif;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.pizza-calabresa {
+    @include cardPizza('calabresa')
+}
+
+.pizza-queijo {
+    @include cardPizza('queijo')
+}
+
+.pizza-portuguesa {
+    @include cardPizza('portuguesa')
+}
+
+.pizza-frango {
+    @include cardPizza('frango')
 }
