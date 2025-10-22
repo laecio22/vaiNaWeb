@@ -1,1 +1,44 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-image: url("./assets/backgroundFloresta.jpg");
+  background-size: cover;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+
+.box-header {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  padding: 110px 40px 40px 40px;
+  display: inline-block;
+  text-align: center;
+  height: inherit;
+}
+.box-header h1 {
+  margin-bottom: 15px;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.box-header p {
+  font-size: 1.5rem;
+  width: 50vw;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+.box-header button {
+  background-color: #66bb6a;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
