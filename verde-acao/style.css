@@ -38,6 +38,7 @@ header {
 .cards {
   padding: 50px 20px;
   text-align: center;
+  background-color: #dbf3dd;
 }
 .cards article {
   display: inline-block;
@@ -47,6 +48,7 @@ header {
   margin: 25px;
   border-radius: 8px;
   border: 1px solid #ccc;
+  background-color: white;
 }
 .cards article img {
   width: 100%;
@@ -94,4 +96,37 @@ header {
 }
 .button-details:hover {
   background-color: #59a55d;
+}
+
+.container-form {
+  background-color: #a6dac0;
+  opacity: 0.6;
+  text-align: center;
+  padding: 50px 30px;
+}
+.container-form h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.container-form p {
+  width: 40vw;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.container-form form {
+  width: 650px;
+  margin: 30px auto;
+}
+.container-form form input, .container-form form select {
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: #8E8E8E;
+  font-size: 1rem;
 }/*# sourceMappingURL=style.css.map */
