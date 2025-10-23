@@ -98,9 +98,27 @@ header {
   background-color: #59a55d;
 }
 
+.button-submit {
+  background-color: #66bb6a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 1.4rem;
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+}
+.button-submit:hover {
+  background-color: #59a55d;
+}
+
 .container-form {
-  background-color: #a6dac0;
-  opacity: 0.6;
+  background-color: #d2f7e4;
+  opacity: 1;
   text-align: center;
   padding: 50px 30px;
 }
@@ -114,12 +132,14 @@ header {
   margin: 0 auto;
   font-weight: 400;
   font-size: 1rem;
+  color: #767676;
 }
 .container-form form {
   width: 650px;
   margin: 30px auto;
 }
-.container-form form input, .container-form form select {
+.container-form form input,
+.container-form form select {
   width: 100%;
   height: 60px;
   margin-top: 20px;
@@ -127,6 +147,24 @@ header {
   border-radius: 15px;
   padding: 10px 15px;
   font-weight: bold;
-  color: #8E8E8E;
+  color: #8e8e8e;
   font-size: 1rem;
+}
+.container-form form input:focus,
+.container-form form select:focus {
+  outline: 2px solid rgb(126, 125, 132);
+}
+
+footer {
+  background-color: #66bb6a;
+  color: white;
+  height: 100px;
+}
+footer p {
+  font-weight: bold;
+  font-size: 1.3rem;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  padding-top: 40px;
 }/*# sourceMappingURL=style.css.map */
