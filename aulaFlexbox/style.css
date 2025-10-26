@@ -33,18 +33,22 @@
 
 .container2 {
   border: 2px solid #000;
-  height: 80vh;
   display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  gap: 10px;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  align-content: center;
+  flex-flow: row-reverse wrap-reverse;
+  height: 80vh;
 }
 .container2 .item2 {
   width: 100px;
   height: 100px;
   background-color: aqua;
+  margin: 10px;
+}
+.container2 .item3 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(157, 0, 255);
+  margin: 10px;
 }
 
 .container3 {
