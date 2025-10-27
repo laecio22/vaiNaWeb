@@ -10,6 +10,7 @@ $white: #fff;
 $black: #000;
 $red-principal: #b72222;
 $red-secundario: #fd1e1e;
+$weight: 400;
 
 ul {
   list-style: none;
@@ -19,7 +20,7 @@ a {
   text-decoration: none;
 }
 
-header { 
+header {
   padding: 1.5rem 2rem;
   height: 100vh;
   background-image: url(./imagens/banner.png);
@@ -29,7 +30,7 @@ header {
   background-position: center;
 }
 
-.navbar { 
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,7 +43,7 @@ header {
 }
 
 .nav-left {
-  display: flex;  
+  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 25vw;
@@ -52,12 +53,12 @@ header {
     color: $gray;
     height: 100%;
     padding: 0.6rem 1.2rem;
-    font-weight: 400;
+    font-weight: $weight;
     font-size: 1.2rem;
   }
 }
 
-.box-content {  
+.box-content {
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -65,56 +66,58 @@ header {
   align-items: center;
 
   h1 {
-    font-weight: 400;
+    font-weight: $weight;
     font-size: 6.5rem;
   }
 
   p {
     color: $red-secundario;
-    font-weight: 400;
+    font-weight: $weight;
     font-size: 2.7rem;
   }
 }
 
 .description {
-    background-color: $gray;
-    color: $black;
-    font-weight: 400;
-    font-size: 1.8rem;
-    height: 200px;
-    padding: 25px;
+  background-color: $gray;
+  color: $black;
+  font-weight: $weight;
+  font-size: 1.8rem;
+  height: 200px;
+  padding: 25px;
 }
-
 
 .etapas {
   background-color: $black;
   color: $white;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
- align-content: center;
-  gap: 15px;
- 
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  height: 1200px;
 
   article {
     width: 400px;
     height: 500px;
     background-color: $red-principal;
-    position: relative;    
-    display: flex;
+    position: relative;
     flex-direction: column;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
 
   img {
     width: 90%;
-    height: 80%;
-   
+    height: 90%;
   }
 
   p {
-    font-weight: 400;
+    font-weight: $weight;
     font-size: 1.6rem;
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    width: 230px;
   }
 }
