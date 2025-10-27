@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+  border: solid 2px #654;
+  padding: 1.5rem 2rem;
+  height: 100vh;
+  background-image: url(./imagens/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+    border: 2px solid #08491f;
+}
+
+.nav-left {
+    display: flex;
+    border: solid 2px #ddd;
+    justify-content: space-between;
+    align-items: center;
+    width: 25vw;
+
+    .btn {
+        background-color: #B72222;
+        color: #D7CBCB;
+        height: 100%;
+        padding:0.6rem 1.2rem;
+    }
+}
