@@ -64,4 +64,13 @@ header {
   color: #fd1e1e;
   font-weight: 400;
   font-size: 2.7rem;
+}
+
+.description {
+  background-color: #d7cbcb;
+  color: #000;
+  font-weight: 400;
+  font-size: 1.8rem;
+  height: 160px;
+  padding: 20px;
 }/*# sourceMappingURL=styles.css.map */
