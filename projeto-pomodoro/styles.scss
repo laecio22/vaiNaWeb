@@ -36,7 +36,7 @@ header {
   height: 10vh;
 
   .menu-icon {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: $white;
   }
 }
@@ -81,6 +81,40 @@ header {
     color: $black;
     font-weight: 400;
     font-size: 1.8rem;
-    height: 160px;
-    padding: 20px;
+    height: 200px;
+    padding: 25px;
+}
+
+
+.etapas {
+  background-color: $black;
+  color: $white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ align-content: center;
+  gap: 15px;
+ 
+
+  article {
+    width: 400px;
+    height: 500px;
+    background-color: $red-principal;
+    position: relative;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    width: 90%;
+    height: 80%;
+   
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
 }
