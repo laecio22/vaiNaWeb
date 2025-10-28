@@ -56,7 +56,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 25vw;
+  column-gap: 15px;
+  // width: 25vw;
 
   .btn {
     background-color: $red-principal;
@@ -75,21 +76,21 @@ header {
   align-items: center;
 
   h1 {
-    @include definirTamanhoForcaFonte(6.5rem, $weight)  
+    @include definirTamanhoForcaFonte(6.5rem, $weight);
   }
 
   p {
     color: $red-secundario;
-    @include definirTamanhoForcaFonte(2.7rem, $weight)  
+    @include definirTamanhoForcaFonte(2.7rem, $weight);
   }
 }
 
 .description {
   background-color: $gray;
-  color: $black; 
+  color: $black;
   height: 200px;
   padding: 25px;
-  @include definirTamanhoForcaFonte(1.8rem, $weight)
+  @include definirTamanhoForcaFonte(1.8rem, $weight);
 }
 
 .etapas {
@@ -116,12 +117,61 @@ header {
     height: 90%;
   }
 
-  p {  
+  p {
     position: absolute;
     bottom: 40px;
     left: 30px;
     width: 230px;
-    @include definirTamanhoForcaFonte(1.6rem, $weight)
-  
+    @include definirTamanhoForcaFonte(1.6rem, $weight);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 1.5rem 0.5rem;
+    background-position: center;
+    height: 40vh;
+  }
+
+  .navbar {
+    height: 4vh;
+  }
+
+  .nav-left {
+    column-gap: 8px;
+
+    .btn {
+      padding: 0.6rem 0.7rem;
+    }
+  }
+
+  .box-content {
+    height: 45vh;
+    justify-content: center;
+
+    h1 {
+      @include definirTamanhoForcaFonte(3rem, $weight);
+    }
+
+    p {
+      color: $red-secundario;
+      @include definirTamanhoForcaFonte(2rem, $weight);
+    }
+  }
+
+  .description {
+    height: 400px;
+    font-size: 1.6rem;
+  }
+
+  .etapas {
+    height: auto;
+    flex-direction: column;
+    padding: 30px 0 300px;
+
+    article {
+      width: 90%;
+      height: 400px;
+    }
   }
 }
