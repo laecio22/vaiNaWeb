@@ -50,7 +50,7 @@ header h1 {
   transition: 0.3s;
 }
 .navHeader li a:hover {
-  color: #2563EB;
+  color: #2563eb;
 }
 .navHeader .btnVerdeHeader {
   background-color: #21c05c;
@@ -61,9 +61,77 @@ header h1 {
   cursor: pointer;
 }
 .navHeader .btnVerdeHeader:hover {
-  background-color: #16A34A;
+  background-color: #16a34a;
 }
 .navHeader .btnVerdeHeader a {
   color: #fff;
   font-size: 1.1rem;
+}
+.navHeader .btnVerdeHeader a:hover {
+  color: #fff;
+}
+
+.primeiraSection {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.primeiraSection section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  height: 45vh;
+  width: 50%;
+  row-gap: 30px;
+}
+.primeiraSection section h2 {
+  color: #1f2937;
+  font-weight: 700;
+  font-size: 3.5rem;
+  width: 95%;
+}
+.primeiraSection section p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  width: 85%;
+  color: #4b5563;
+}
+
+.boxBtnsPrimeiraSection {
+  display: flex;
+  gap: 15px;
+  width: 80%;
+}
+.boxBtnsPrimeiraSection button {
+  font-weight: 400;
+  font-size: 1.1rem;
+  height: 9vh;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.boxBtnsPrimeiraSection .btnVerde {
+  background-color: #16A34A;
+  color: #fff;
+}
+.boxBtnsPrimeiraSection .btnVerde:hover {
+  background-color: #21C05C;
+}
+.boxBtnsPrimeiraSection .btnBranco {
+  color: #2563EB;
+  border: 1px solid #2563EB;
+  background-color: #fff;
+}
+.boxBtnsPrimeiraSection .btnBranco:hover {
+  background-color: #eeeef1;
 }/*# sourceMappingURL=styles.css.map */

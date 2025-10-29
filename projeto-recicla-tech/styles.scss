@@ -12,8 +12,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 14vh; 
-  border-bottom: 2px solid #b4aeae; 
+  height: 14vh;
+  border-bottom: 2px solid #b4aeae;
   margin: 0 2rem;
 
   div {
@@ -51,8 +51,8 @@ header {
       font-size: 1.4rem;
       transition: 0.3s;
 
-      &:hover {       
-        color: #2563EB;
+      &:hover {
+        color: #2563eb;
       }
     }
   }
@@ -66,13 +66,87 @@ header {
     cursor: pointer;
 
     &:hover {
-      background-color: #16A34A;
+      background-color: #16a34a;
     }
-    
 
     a {
       color: #fff;
       font-size: 1.1rem;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.primeiraSection {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    height: 45vh;
+    width: 50%;
+    row-gap: 30px;
+
+    h2 {
+      color: #1f2937;
+      font-weight: 700;
+      font-size: 3.5rem;
+      width: 95%;
+    }
+
+    p {
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 1.3rem;
+      width: 85%;
+      color: #4b5563;
+    }
+  }
+}
+
+.boxBtnsPrimeiraSection {
+  display: flex;
+  gap: 15px;  
+  width: 80%;
+
+  button {
+    font-weight: 400;
+    font-size: 1.1rem;
+    height: 9vh;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+
+  .btnVerde {
+    background-color: #16A34A;
+    color: #fff;
+
+    &:hover {
+      background-color: #21C05C;
+    }
+  }
+
+  .btnBranco {
+    color: #2563EB;
+    border: 1px solid #2563EB;
+    background-color: #fff;
+    &:hover {
+      background-color: #eeeef1;
     }
   }
 }
