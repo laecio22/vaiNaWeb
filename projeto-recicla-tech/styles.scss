@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: #4b5563;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 14vh;
+    padding: 0 2rem;
+
+  div {
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: #1f2937;
+  }
+}
+
+.navHeader {
+  width: 40%;
+  
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  li {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        color: #4b5563;
+        font-size: 1.4rem;
+    }
+  }
+
+  .btnVerdeHeader {
+   background-color: #21C05C;
+   height: 7vh;
+   width: 28%;
+   border-radius: 8px;
+
+   a {
+    color: #fff;
+   }
+  }
+}
