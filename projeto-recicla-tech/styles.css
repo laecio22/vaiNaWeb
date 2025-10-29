@@ -13,7 +13,8 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 14vh;
-  padding: 0 2rem;
+  border-bottom: 2px solid #b4aeae;
+  margin: 0 2rem;
 }
 header div {
   display: flex;
@@ -22,17 +23,20 @@ header div {
   width: 20%;
 }
 header h1 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: #1f2937;
+  font-weight: 700;
 }
 
 .navHeader {
-  width: 40%;
+  width: 45%;
 }
 .navHeader ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
 }
 .navHeader li {
   height: 5vh;
@@ -43,13 +47,23 @@ header h1 {
 .navHeader li a {
   color: #4b5563;
   font-size: 1.4rem;
+  transition: 0.3s;
+}
+.navHeader li a:hover {
+  color: #2563EB;
 }
 .navHeader .btnVerdeHeader {
-  background-color: #21C05C;
+  background-color: #21c05c;
   height: 7vh;
-  width: 28%;
+  width: 35%;
   border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.navHeader .btnVerdeHeader:hover {
+  background-color: #16A34A;
 }
 .navHeader .btnVerdeHeader a {
   color: #fff;
+  font-size: 1.1rem;
 }/*# sourceMappingURL=styles.css.map */

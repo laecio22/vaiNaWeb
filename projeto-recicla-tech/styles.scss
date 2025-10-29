@@ -5,18 +5,18 @@
   list-style: none;
   text-decoration: none;
   color: #4b5563;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 14vh;
-    padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 14vh; 
+  border-bottom: 2px solid #b4aeae; 
+  margin: 0 2rem;
 
   div {
-   
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -24,19 +24,20 @@ header {
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: #1f2937;
+    font-weight: 700;
   }
 }
 
 .navHeader {
-  width: 40%;
-  
+  width: 45%;
 
   ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    column-gap: 25px;
   }
 
   li {
@@ -46,19 +47,32 @@ header {
     align-items: center;
 
     a {
-        color: #4b5563;
-        font-size: 1.4rem;
+      color: #4b5563;
+      font-size: 1.4rem;
+      transition: 0.3s;
+
+      &:hover {       
+        color: #2563EB;
+      }
     }
   }
 
   .btnVerdeHeader {
-   background-color: #21C05C;
-   height: 7vh;
-   width: 28%;
-   border-radius: 8px;
+    background-color: #21c05c;
+    height: 7vh;
+    width: 35%;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
 
-   a {
-    color: #fff;
-   }
+    &:hover {
+      background-color: #16A34A;
+    }
+    
+
+    a {
+      color: #fff;
+      font-size: 1.1rem;
+    }
   }
 }
