@@ -134,4 +134,28 @@ header h1 {
 }
 .boxBtnsPrimeiraSection .btnBranco:hover {
   background-color: #eeeef1;
+}
+
+.estatisticas {
+  background-color: #F3F5F8;
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.estatisticas article {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+.estatisticas article h4 {
+  color: #16A34A;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.estatisticas article p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #4B5563;
 }/*# sourceMappingURL=styles.css.map */
