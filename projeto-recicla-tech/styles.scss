@@ -114,7 +114,7 @@ header {
 
 .boxBtnsPrimeiraSection {
   display: flex;
-  gap: 15px;  
+  gap: 15px;
   width: 80%;
 
   button {
@@ -133,17 +133,17 @@ header {
   }
 
   .btnVerde {
-    background-color: #16A34A;
+    background-color: #16a34a;
     color: #fff;
 
     &:hover {
-      background-color: #21C05C;
+      background-color: #21c05c;
     }
   }
 
   .btnBranco {
-    color: #2563EB;
-    border: 1px solid #2563EB;
+    color: #2563eb;
+    border: 1px solid #2563eb;
     background-color: #fff;
     &:hover {
       background-color: #eeeef1;
@@ -152,7 +152,7 @@ header {
 }
 
 .estatisticas {
-  background-color: #F3F5F8;
+  background-color: #f3f5f8;
   height: 30vh;
   display: flex;
   justify-content: space-around;
@@ -165,7 +165,7 @@ header {
     align-items: center;
 
     h4 {
-      color: #16A34A;
+      color: #16a34a;
       font-weight: 700;
       font-size: 2.5rem;
     }
@@ -173,19 +173,49 @@ header {
     p {
       font-weight: 400;
       font-size: 1rem;
-      color: #4B5563;
+      color: #4b5563;
     }
-  }  
+  }
 }
 
 .funcionamento {
-   height: 70vh;
-  //  display: flex;
-  //  justify-content: center;
-  //  align-items: center;
-   
+  height: 90vh;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #556;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
 
-  h3 {
-    // color: #1F2937;
+  .container-titles {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    h3 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: #1f2937;
+    }
+
+    p {
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 1.5rem;
+      color: #1f2937;
+    }
+  }
+
+  .container-etapas {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    article {
+      background-color: #F3F5F8;
+      width: 45%;
+    }
   }
 }
