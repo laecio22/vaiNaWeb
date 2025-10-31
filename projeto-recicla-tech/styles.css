@@ -55,7 +55,7 @@ header h1 {
 .navHeader .btnVerdeHeader {
   background-color: #21c05c;
   height: 7vh;
-  width: 35%;
+  min-width: 185px;
   border-radius: 8px;
   transition: 0.3s;
   cursor: pointer;
@@ -193,6 +193,76 @@ header h1 {
   width: 100%;
 }
 .funcionamento .container-etapas article {
-  background-color: #F3F5F8;
+  background-color: #f3f5f8;
   width: 45%;
+}
+
+@media (max-width: 1410px) {
+  .navHeader {
+    width: 65%;
+  }
+}
+@media (max-width: 1000px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 0;
+    align-items: start;
+    gap: 1.2rem;
+  }
+  header div {
+    width: 50%;
+    justify-content: start;
+    gap: 1.2rem;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  .navHeader {
+    width: 100%;
+  }
+  .navHeader ul {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 501px) and (max-width: 900px) {
+  .navHeader ul li a {
+    font-size: 1.2rem;
+  }
+  .navHeader .btnVerdeHeader a {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 201px) and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20vh;
+    padding: 0;
+  }
+  header div {
+    width: 70%;
+  }
+  header div h1 {
+    font-size: 1.5rem;
+  }
+  .navHeader {
+    width: 100%;
+  }
+  .navHeader ul {
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 0;
+  }
+  .navHeader ul li a {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .navHeader .btnVerdeHeader {
+    height: 5vh;
+    min-width: 100px;
+  }
+  .navHeader .btnVerdeHeader a {
+    font-size: 0.7rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
