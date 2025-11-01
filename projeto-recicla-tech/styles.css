@@ -109,7 +109,7 @@ header h1 {
   font-weight: 400;
   font-size: 1.1rem;
   height: 9vh;
-  width: 40%;
+  min-width: 172px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -202,6 +202,14 @@ header h1 {
     width: 65%;
   }
 }
+@media (max-width: 1032px) {
+  .primeiraSection section {
+    height: auto;
+  }
+  .primeiraSection section h2 {
+    font-size: 2.7rem;
+  }
+}
 @media (max-width: 1000px) {
   header {
     flex-direction: column;
@@ -232,6 +240,24 @@ header h1 {
   .navHeader .btnVerdeHeader a {
     font-size: 0.9rem;
   }
+  .primeiraSection {
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+  }
+  .primeiraSection section {
+    height: auto;
+    width: 96%;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .primeiraSection section h2 {
+    margin-top: 20px;
+  }
+  .primeiraSection .boxBtnsPrimeiraSection {
+    justify-content: center;
+  }
 }
 @media (min-width: 201px) and (max-width: 500px) {
   header {
@@ -255,7 +281,7 @@ header h1 {
     gap: 0;
   }
   .navHeader ul li a {
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: center;
   }
   .navHeader .btnVerdeHeader {
@@ -264,5 +290,31 @@ header h1 {
   }
   .navHeader .btnVerdeHeader a {
     font-size: 0.7rem;
+  }
+  .primeiraSection {
+    flex-direction: column;
+    height: auto;
+    margin: 0 2rem;
+    gap: 25px;
+  }
+  .primeiraSection section {
+    width: 100%;
+  }
+  .primeiraSection section h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .primeiraSection section p {
+    width: 100%;
+  }
+  .primeiraSection .boxBtnsPrimeiraSection button {
+    min-width: 150px;
+    font-size: 0.9rem;
+    height: 7vh;
+  }
+  .primeiraSection .imagemReciclagem {
+    width: 80%;
   }
 }/*# sourceMappingURL=styles.css.map */
