@@ -212,10 +212,39 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
 
     article {
       background-color: #f3f5f8;
-      width: 45%;
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      gap: 10px;
+      padding: 0 2rem;
+      height: 50vh;
+      border-radius: 8px;
+    }
+
+    .para-tipo-usuario {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      h4 {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 1.4rem;        
+      }
+
+      .usuario-doador {
+        color: #16A34A;
+      }
+
+      .usuario-adquirinte {
+        color: #2563EB;
+      }
     }
   }
 }
@@ -228,7 +257,7 @@ header {
   }
 }
 
-@media (min-width:1033px) and (max-width:1409px) {
+@media (min-width: 1033px) and (max-width: 1409px) {
   .primeiraSection {
     section {
       h2 {
@@ -324,7 +353,6 @@ header {
   }
 
   .estatisticas {
-
     article {
       h4 {
         font-size: 2rem;
@@ -337,6 +365,7 @@ header {
   }
 }
 
+//responsividade mobile
 @media (min-width: 201px) and (max-width: 500px) {
   header {
     flex-direction: column;
@@ -381,11 +410,11 @@ header {
 
   .primeiraSection {
     flex-direction: column;
-     height: auto;
-     margin: 0 2rem;
-     gap: 25px;
+    height: auto;
+    margin: 0 2rem;
+    gap: 25px;
 
-     section {
+    section {
       width: 100%;
 
       h2 {
@@ -398,19 +427,19 @@ header {
       p {
         width: 100%;
       }
-     }
+    }
 
-     .boxBtnsPrimeiraSection {
-       button {
+    .boxBtnsPrimeiraSection {
+      button {
         min-width: 150px;
         font-size: 0.9rem;
         height: 7vh;
-       }
-     }
+      }
+    }
 
-     .imagemReciclagem {
+    .imagemReciclagem {
       width: 80%;
-     }
+    }
   }
 
   .estatisticas {
@@ -422,7 +451,7 @@ header {
       }
 
       p {
-       font-size: 0.8rem;
+        font-size: 0.8rem;
         min-width: 80px;
       }
     }
