@@ -228,6 +228,20 @@ header {
   }
 }
 
+@media (min-width:1033px) and (max-width:1409px) {
+  .primeiraSection {
+    section {
+      h2 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
 //responsividade  pontual  para  o tamanho da  seção  principal
 @media (max-width: 1032px) {
   .primeiraSection {
@@ -308,6 +322,19 @@ header {
       justify-content: center;
     }
   }
+
+  .estatisticas {
+
+    article {
+      h4 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
 }
 
 @media (min-width: 201px) and (max-width: 500px) {
@@ -384,5 +411,20 @@ header {
      .imagemReciclagem {
       width: 80%;
      }
+  }
+
+  .estatisticas {
+    gap: 23px;
+    padding: 0 2rem;
+    article {
+      h4 {
+        font-size: 1.6rem;
+      }
+
+      p {
+       font-size: 0.8rem;
+        min-width: 80px;
+      }
+    }
   }
 }
