@@ -159,10 +159,11 @@ header {
   align-items: center;
 
   article {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    align-items: center;
+    text-align: center;
+    // display: flex;
+    // flex-direction: column;
+    // gap: 25px;
+    // align-items: center;
 
     h4 {
       color: #16a34a;
@@ -179,98 +180,97 @@ header {
 }
 
 .funcionamento {
-  height: 90vh;
-  width: 80%;
-  margin: 0 auto;
+  height: 70vh;  
   border: 1px solid #556;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
+  justify-content: space-evenly;
+  row-gap: 20px;
 
-  .container-titles {
+  .containerTitle {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    gap: 10px;
+    margin: 0 auto;
+    width: 80%;
 
-    h3 {
+    h2 {
       font-weight: 700;
-      font-size: 2.5rem;
-      color: #1f2937;
+      font-size: 2.3rem;
     }
 
     p {
-      font-family: "Inter", sans-serif;
+      font-family: 'Inter', sans-serif;
       font-weight: 400;
-      font-size: 1.5rem;
-      color: #1f2937;
+      font-size: 1.3rem;
     }
   }
 
-  .container-etapas {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-wrap: wrap;
-    align-content: center;
+  h2, p {
+    width: 75%;
+    color: #1F2937;
+  }
 
-    article {
-      background-color: #f3f5f8;
-      width: 600px;
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      justify-content: center;
-      gap: 20px;
-      padding: 0 2rem;
-      height: 50vh;
-      border-radius: 8px;
+    section {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
 
-      p {
-        font-size: 1rem;
-        font-weight: 400;
-        color: #4b5563;
-      }
+        article {
+            background-color: #F3F5F8;
+            border-radius: 10px;
+            height: 50vh;
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
 
-      h5 {
-        color: #09090B;
-        font-weight: 700;
-        font-size: 1rem;
-      }
+            div, p {
+                width: 90%;
+            }
+
+            p {
+              font-weight: 400;
+              font-size: 1rem;
+              color: #4B5563;
+            }
+        }
     }
 
-    .para-tipo-usuario {
-      display: flex;
-      align-items: center;
-      gap: 5px;
+     .caixaFlexivel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-      h4 {
-        font-family: "Inter", sans-serif;
-        font-weight: 400;
-        font-size: 1.4rem;
-      }
+        img {
+            width: 8%;
+        }
 
-      .usuario-doador {
-        color: #16a34a;
-      }
+        div, h2 {
+            width: 90%;
+        }
 
-      .usuario-adquirinte {
-        color: #2563eb;
-      }
+        h2 {
+          font-family: 'Inter', sans-serif;
+          font-weight: 400;
+          font-size: 1.6rem;
+        }
+
+        h3 {
+          color: #09090B;
+          font-weight: 700;
+        }
     }
 
-    .etapa {
-      display: flex;
-      gap: 10px;
+    .tituloParaDoadores {
+        color: #16A34A;
+    }
 
-      img {
-        width: 40px;
-        height: 40px;
-      }
+    .tituloParaAdquirentes {
+      color: #2563eb;
     }
   }
-}
 
 //responsividade para  header
 
