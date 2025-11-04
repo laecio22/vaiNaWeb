@@ -181,9 +181,10 @@ header h1 {
   font-weight: 400;
   font-size: 1.3rem;
 }
-.funcionamento h2, .funcionamento p {
+.funcionamento h2,
+.funcionamento p {
   width: 75%;
-  color: #1F2937;
+  color: #1f2937;
 }
 .funcionamento section {
   width: 100%;
@@ -191,7 +192,7 @@ header h1 {
   justify-content: space-evenly;
 }
 .funcionamento section article {
-  background-color: #F3F5F8;
+  background-color: #f3f5f8;
   border-radius: 10px;
   height: 50vh;
   width: 35%;
@@ -200,13 +201,14 @@ header h1 {
   justify-content: space-evenly;
   align-items: center;
 }
-.funcionamento section article div, .funcionamento section article p {
+.funcionamento section article div,
+.funcionamento section article p {
   width: 90%;
 }
 .funcionamento section article p {
   font-weight: 400;
   font-size: 1rem;
-  color: #4B5563;
+  color: #4b5563;
 }
 .funcionamento .caixaFlexivel {
   display: flex;
@@ -216,7 +218,8 @@ header h1 {
 .funcionamento .caixaFlexivel img {
   width: 8%;
 }
-.funcionamento .caixaFlexivel div, .funcionamento .caixaFlexivel h2 {
+.funcionamento .caixaFlexivel div,
+.funcionamento .caixaFlexivel h2 {
   width: 90%;
 }
 .funcionamento .caixaFlexivel h2 {
@@ -225,16 +228,24 @@ header h1 {
   font-size: 1.6rem;
 }
 .funcionamento .caixaFlexivel h3 {
-  color: #09090B;
+  color: #09090b;
   font-weight: 700;
 }
 .funcionamento .tituloParaDoadores {
-  color: #16A34A;
+  color: #16a34a;
 }
 .funcionamento .tituloParaAdquirentes {
   color: #2563eb;
 }
 
+@media (max-width: 1500px) {
+  .funcionamento .containerTitle {
+    width: 85%;
+  }
+  .funcionamento section article {
+    width: 40%;
+  }
+}
 @media (max-width: 1410px) {
   .navHeader {
     width: 65%;
@@ -278,6 +289,23 @@ header h1 {
   .navHeader ul {
     justify-content: space-between;
   }
+  .funcionamento {
+    height: auto;
+  }
+  .funcionamento .containerTitle {
+    width: 80%;
+    text-align: center;
+    align-items: center;
+  }
+  .funcionamento section {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .funcionamento section article {
+    width: 60%;
+    height: 70vh;
+  }
 }
 @media (min-width: 501px) and (max-width: 900px) {
   .navHeader ul li a {
@@ -309,6 +337,12 @@ header h1 {
   }
   .estatisticas article p {
     font-size: 0.9rem;
+  }
+  .funcionamento .containerTitle h2 {
+    font-size: 2.1rem;
+  }
+  .funcionamento section article {
+    width: 70%;
   }
 }
 @media (min-width: 201px) and (max-width: 500px) {
@@ -379,5 +413,25 @@ header h1 {
   .estatisticas article p {
     font-size: 0.8rem;
     min-width: 80px;
+  }
+  .funcionamento .containerTitle h2 {
+    font-size: 2rem;
+  }
+  .funcionamento .containerTitle p {
+    font-size: 1.1rem;
+  }
+  .funcionamento h2,
+  .funcionamento p {
+    width: 100%;
+  }
+  .funcionamento section article {
+    width: 85%;
+  }
+  .funcionamento .caixaFlexivel {
+    gap: 15px;
+  }
+  .funcionamento .caixaFlexivel img {
+    width: 10%;
+    min-width: 35px;
   }
 }/*# sourceMappingURL=styles.css.map */
