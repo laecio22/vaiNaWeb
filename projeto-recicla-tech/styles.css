@@ -261,11 +261,20 @@ header h1 {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.3rem;
-  color: #4b5563;
 }
 .produtos p,
 .produtos h2 {
   width: 90%;
+}
+.produtos h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #09090B;
+}
+.produtos p {
+  font-size: 1rem;
+  font-weight: 400;
 }
 .produtos section {
   display: flex;
@@ -296,7 +305,7 @@ header h1 {
   padding: 0.6rem 1.2rem;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 0.9rem;
+  font-size: 1rem;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -313,6 +322,9 @@ header h1 {
   }
   .produtos .containerTitle {
     width: 85%;
+  }
+  .produtos section article {
+    width: 25%;
   }
 }
 @media (max-width: 1410px) {
