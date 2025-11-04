@@ -299,7 +299,6 @@ header {
       font-family: "Inter", sans-serif;
       font-weight: 400;
       font-size: 1.3rem;
-      
     }
   }
 
@@ -309,10 +308,10 @@ header {
   }
 
   h2 {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 1.6rem;
-    color: #09090B;
+    color: #09090b;
   }
 
   p {
@@ -331,7 +330,8 @@ header {
       flex-direction: column;
       gap: 10px;
       align-items: center;
-      height: 430px;
+      min-height: 450px;
+      // height: 430px;
       text-align: center;
       background-color: #ffffff;
       border: 2px solid #16a34a;
@@ -355,7 +355,7 @@ header {
         transition: 0.3s;
 
         &:hover {
-          background-color: #21C05C;
+          background-color: #21c05c;
         }
       }
     }
@@ -380,10 +380,46 @@ header {
       width: 85%;
     }
 
+    p,
+    h2 {
+      width: 80%;
+    }
+
     section {
-       article {
+      article {
         width: 25%;
-       }
+        min-height: 470px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1499px) {
+  .produtos {
+    p,
+    h2 {
+      width: 80%;
+      min-width: 300px;
+    }
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1299px) {
+  .produtos {
+    p,
+    h2 {
+      width: 90%;
+      min-width: 250px;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    section {
+      article {
+        min-height: 430px;
+      }
     }
   }
 }
@@ -464,6 +500,24 @@ header {
       article {
         width: 60%;
         height: 70vh;
+      }
+    }
+  }
+
+  .produtos {
+    .containerTitle {
+      width: 80%;
+      text-align: center;
+      align-items: center;
+    }
+
+    section {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      article {
+        width: 40%;
       }
     }
   }
