@@ -159,7 +159,6 @@ header h1 {
 
 .funcionamento {
   height: 70vh;
-  border: 1px solid #556;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -238,12 +237,82 @@ header h1 {
   color: #2563eb;
 }
 
+.produtos {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  row-gap: 15px;
+  background-color: #f3f5f8;
+}
+.produtos .containerTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+  width: 80%;
+}
+.produtos .containerTitle h2 {
+  font-weight: 700;
+  font-size: 2.3rem;
+  color: #1f2937;
+}
+.produtos .containerTitle p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #4b5563;
+}
+.produtos p,
+.produtos h2 {
+  width: 90%;
+}
+.produtos section {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.produtos section article {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  height: 430px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 2px solid #16a34a;
+  border-radius: 8px;
+}
+.produtos section article img {
+  width: 100%;
+}
+.produtos section article button {
+  background-color: #16a34a;
+  color: #fff;
+  border: none;
+  width: 150px;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.produtos section article button:hover {
+  background-color: #21C05C;
+}
+
 @media (max-width: 1500px) {
   .funcionamento .containerTitle {
     width: 85%;
   }
   .funcionamento section article {
     width: 40%;
+  }
+  .produtos .containerTitle {
+    width: 85%;
   }
 }
 @media (max-width: 1410px) {
