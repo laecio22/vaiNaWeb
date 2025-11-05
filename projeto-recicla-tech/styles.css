@@ -237,12 +237,12 @@ header h1 {
 }
 
 .produtos {
-  height: 90vh;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  row-gap: 15px;
   background-color: #f3f5f8;
+  align-items: center;
 }
 .produtos .containerTitle {
   display: flex;
@@ -260,7 +260,7 @@ header h1 {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.3rem;
-  color: #4B5563;
+  color: #4b5563;
 }
 .produtos h3,
 .produtos h2 {
@@ -280,14 +280,16 @@ header h1 {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  height: 50vh;
 }
 .produtos section article {
   width: 20%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
   align-items: center;
-  min-height: 450px;
+  height: 50vh;
+  padding-bottom: 2rem;
+  justify-content: space-between;
   text-align: center;
   background-color: #ffffff;
   border: 2px solid #16a34a;
@@ -295,12 +297,14 @@ header h1 {
 }
 .produtos section article img {
   width: 100%;
+  height: 25vh;
 }
 .produtos section article button {
   background-color: #16a34a;
   color: #fff;
   border: none;
-  width: 150px;
+  width: 50%;
+  height: 40px;
   border-radius: 6px;
   padding: 0.6rem 1.2rem;
   font-family: "Inter", sans-serif;
@@ -324,13 +328,17 @@ header h1 {
     width: 85%;
   }
   .produtos h3,
-  .produtos h2,
-  .produtos p {
+  .produtos h2 {
     width: 80%;
+  }
+  .produtos p {
+    width: 90%;
   }
   .produtos section article {
     width: 25%;
-    min-height: 470px;
+  }
+  .produtos section article button {
+    width: 60%;
   }
 }
 @media (max-width: 1410px) {
@@ -395,15 +403,23 @@ header h1 {
     width: 60%;
     height: 70vh;
   }
+  .produtos {
+    height: 200vh;
+  }
   .produtos .containerTitle {
-    width: 80%;
+    width: 100%;
     text-align: center;
     align-items: center;
+  }
+  .produtos .containerTitle h3,
+  .produtos .containerTitle h2 {
+    width: 100%;
   }
   .produtos section {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
+    height: 150vh;
   }
   .produtos section article {
     width: 40%;
@@ -445,6 +461,9 @@ header h1 {
   }
   .funcionamento section article {
     width: 70%;
+  }
+  .produtos section article {
+    width: 50%;
   }
 }
 @media (min-width: 201px) and (max-width: 500px) {
@@ -535,5 +554,11 @@ header h1 {
   .funcionamento .caixaFlexivel img {
     width: 10%;
     min-width: 35px;
+  }
+  .produtos .containerTitle h2 {
+    font-size: 2rem;
+  }
+  .produtos section article {
+    width: 75%;
   }
 }/*# sourceMappingURL=styles.css.map */
