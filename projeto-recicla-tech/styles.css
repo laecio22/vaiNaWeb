@@ -158,11 +158,10 @@ header h1 {
 }
 
 .funcionamento {
-  height: 70vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  row-gap: 20px;
 }
 .funcionamento .containerTitle {
   display: flex;
@@ -175,13 +174,13 @@ header h1 {
   font-weight: 700;
   font-size: 2.3rem;
 }
-.funcionamento .containerTitle p {
+.funcionamento .containerTitle h3 {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.3rem;
 }
 .funcionamento h2,
-.funcionamento p {
+.funcionamento h3 {
   width: 75%;
   color: #1f2937;
 }
@@ -193,7 +192,7 @@ header h1 {
 .funcionamento section article {
   background-color: #f3f5f8;
   border-radius: 10px;
-  height: 50vh;
+  height: 60vh;
   width: 35%;
   display: flex;
   flex-direction: column;
@@ -257,12 +256,13 @@ header h1 {
   font-size: 2.3rem;
   color: #1f2937;
 }
-.produtos .containerTitle p {
+.produtos .containerTitle h3 {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.3rem;
+  color: #4B5563;
 }
-.produtos p,
+.produtos h3,
 .produtos h2 {
   width: 90%;
 }
@@ -323,33 +323,14 @@ header h1 {
   .produtos .containerTitle {
     width: 85%;
   }
-  .produtos p,
-  .produtos h2 {
+  .produtos h3,
+  .produtos h2,
+  .produtos p {
     width: 80%;
   }
   .produtos section article {
     width: 25%;
     min-height: 470px;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1499px) {
-  .produtos p,
-  .produtos h2 {
-    width: 80%;
-    min-width: 300px;
-  }
-}
-@media (min-width: 1001px) and (max-width: 1299px) {
-  .produtos p,
-  .produtos h2 {
-    width: 90%;
-    min-width: 250px;
-  }
-  .produtos p {
-    font-size: 0.9rem;
-  }
-  .produtos section article {
-    min-height: 430px;
   }
 }
 @media (max-width: 1410px) {
@@ -396,7 +377,9 @@ header h1 {
     justify-content: space-between;
   }
   .funcionamento {
-    height: auto;
+    height: 180vh;
+    row-gap: 30px;
+    justify-content: center;
   }
   .funcionamento .containerTitle {
     width: 80%;
@@ -540,7 +523,7 @@ header h1 {
     font-size: 1.1rem;
   }
   .funcionamento h2,
-  .funcionamento p {
+  .funcionamento h3 {
     width: 100%;
   }
   .funcionamento section article {
