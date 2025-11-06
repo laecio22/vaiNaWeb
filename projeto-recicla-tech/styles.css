@@ -317,6 +317,74 @@ header h1 {
   background-color: #21c05c;
 }
 
+.comentarios {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #657;
+}
+.comentarios .containerTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.comentarios .containerTitle h2 {
+  color: #1f2937;
+  font-weight: 700;
+  font-size: 2.3rem;
+}
+.comentarios .containerTitle h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #4b5563;
+  font-size: 1.3rem;
+}
+.comentarios section {
+  display: flex;
+  justify-content: space-around;
+}
+.comentarios section article {
+  width: 25%;
+  border: 1px solid #9ca3af;
+  border-left: 4px solid #9ca3af;
+  border-radius: 8px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+}
+.comentarios section article img {
+  width: 50%;
+}
+.comentarios section article p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.comentarios .caixaFlexivel {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.comentarios .caixaFlexivel h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #09090b;
+  font-size: 0.9rem;
+}
+.comentarios .caixaFlexivel h5 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+.comentarios .caixaFlexivel img {
+  width: 15%;
+}
+
 @media (max-width: 1500px) {
   .funcionamento .containerTitle {
     width: 85%;
@@ -344,6 +412,9 @@ header h1 {
 @media (max-width: 1410px) {
   .navHeader {
     width: 65%;
+  }
+  .comentarios section article {
+    width: 30%;
   }
 }
 @media (min-width: 1033px) and (max-width: 1409px) {
@@ -424,6 +495,21 @@ header h1 {
   .produtos section article {
     width: 40%;
   }
+  .comentarios {
+    height: 180vh;
+  }
+  .comentarios .containerTitle {
+    width: 100%;
+    text-align: center;
+  }
+  .comentarios section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .comentarios section article {
+    width: 40%;
+  }
 }
 @media (min-width: 501px) and (max-width: 900px) {
   .navHeader ul li a {
@@ -463,6 +549,9 @@ header h1 {
     width: 70%;
   }
   .produtos section article {
+    width: 50%;
+  }
+  .comentarios section article {
     width: 50%;
   }
 }
@@ -559,6 +648,15 @@ header h1 {
     font-size: 2rem;
   }
   .produtos section article {
+    width: 75%;
+  }
+  .comentarios {
+    height: 190vh;
+  }
+  .comentarios .containerTitle h2 {
+    font-size: 2rem;
+  }
+  .comentarios section article {
     width: 75%;
   }
 }/*# sourceMappingURL=styles.css.map */
