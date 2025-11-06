@@ -487,7 +487,7 @@ header {
 
     button {
       width: 40%;
-      min-width: 170px;
+      min-width: 150px;
       height: 7vh;
       cursor: pointer;
       font-weight: 400;
@@ -689,6 +689,14 @@ header {
 
       article {
         width: 40%;
+      }
+    }
+  }
+
+  .facaParte {
+    .containerTitle {
+      h3{
+        width: 80%;
       }
     }
   }
@@ -923,6 +931,16 @@ header {
     section {
       article {
         width: 75%;
+      }
+    }
+  }
+
+  .facaParte {
+    height: 50vh;
+    .containerTitle {
+      h2 {
+        font-size: 2rem;
+        width: 90%;
       }
     }
   }
