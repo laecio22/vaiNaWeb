@@ -323,13 +323,13 @@ header h1 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid #657;
 }
 .comentarios .containerTitle {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 .comentarios .containerTitle h2 {
   color: #1f2937;
@@ -383,6 +383,73 @@ header h1 {
 }
 .comentarios .caixaFlexivel img {
   width: 15%;
+}
+
+.facaParte {
+  background-color: #f3f5f8;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.facaParte .containerTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.facaParte .containerTitle h2 {
+  color: #000;
+  font-weight: 700;
+  font-size: 2.3rem;
+}
+.facaParte .containerTitle h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #000;
+  font-size: 1.3rem;
+}
+.facaParte h2 {
+  width: 100%;
+  text-align: center;
+}
+.facaParte h3 {
+  width: 50%;
+}
+.facaParte .containerButtons {
+  display: flex;
+  gap: 15px;
+}
+.facaParte .containerButtons button {
+  width: 40%;
+  min-width: 170px;
+  height: 7vh;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.facaParte .containerButtons .btnVerde {
+  background-color: #16a34a;
+  color: #fff;
+}
+.facaParte .containerButtons .btnVerde:hover {
+  background-color: #21c05c;
+}
+.facaParte .containerButtons .btnBranco {
+  background-color: #f3f5f8;
+  color: #16a34a;
+  border: 1px solid #16a34a;
+}
+.facaParte .containerButtons .btnBranco:hover {
+  background-color: #fff;
 }
 
 @media (max-width: 1500px) {

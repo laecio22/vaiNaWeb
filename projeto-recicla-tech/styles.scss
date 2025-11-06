@@ -372,13 +372,13 @@ header {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid #657;
 
   .containerTitle {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     h2 {
       color: #1f2937;
       font-weight: 700;
@@ -439,6 +439,84 @@ header {
 
     img {
       width: 15%;
+    }
+  }
+}
+
+.facaParte {
+  background-color: #f3f5f8;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  .containerTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    h2 {
+      color: #000;
+      font-weight: 700;
+      font-size: 2.3rem;
+    }
+
+    h3 {
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      color: #000;
+      font-size: 1.3rem;
+    }
+  }
+
+  h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  h3 {
+    width: 50%;
+  }
+
+  .containerButtons {
+    display: flex;
+    gap: 15px;
+
+    button {
+      width: 40%;
+      min-width: 170px;
+      height: 7vh;
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.5s;
+    }
+
+    .btnVerde {
+      background-color: #16a34a;
+      color: #fff;
+
+      &:hover {
+        background-color: #21c05c;
+      }
+    }
+
+    .btnBranco {
+      background-color: #f3f5f8;
+      color: #16a34a;
+      border: 1px solid #16a34a;
+
+      &:hover {
+        background-color: #fff;
+      }
     }
   }
 }
@@ -523,8 +601,6 @@ header {
       }
     }
   }
-
-  
 }
 
 @media (max-width: 1000px) {
@@ -603,8 +679,8 @@ header {
   .comentarios {
     height: 180vh;
     .containerTitle {
-        width: 100%;
-        text-align: center;       
+      width: 100%;
+      text-align: center;
     }
     section {
       flex-direction: column;
@@ -694,7 +770,6 @@ header {
   }
 
   .comentarios {
-   
     section {
       article {
         width: 50%;
