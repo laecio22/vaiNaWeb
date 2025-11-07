@@ -387,7 +387,7 @@ header h1 {
 
 .facaParte {
   background-color: #f3f5f8;
-  height: 40vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -450,6 +450,22 @@ header h1 {
 }
 .facaParte .containerButtons .btnBranco:hover {
   background-color: #fff;
+}
+
+footer {
+  background: #1F2937;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+footer .contentFooter {
+  height: 50vh;
+}
+footer .footerDireitosAutorais {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 1500px) {
