@@ -453,13 +453,64 @@ header h1 {
 }
 
 footer {
-  background: #1F2937;
-  height: 70vh;
+  background: #1f2937;
+  height: 60vh;
   display: flex;
   flex-direction: column;
 }
+footer p,
+footer a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #9ca3af;
+}
 footer .contentFooter {
-  height: 50vh;
+  height: 40vh;
+  display: flex;
+  border-bottom: 2px solid #4b5563;
+  margin: 0 2rem;
+}
+footer .contentFooter article {
+  width: 40%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 50px;
+}
+footer .contentFooter article nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+footer .contentFooter article .boxIconsRedesSociais {
+  display: flex;
+  gap: 12px;
+}
+footer .contentFooter .caixaFlexivel {
+  display: flex;
+  gap: 10px;
+}
+footer .contentFooter .caixaFlexivel img {
+  width: 12%;
+  min-width: 40px;
+}
+footer .contentFooter h2,
+footer .contentFooter h3 {
+  color: #fff;
+}
+footer .contentFooter h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+footer .contentFooter h3 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+footer .contentFooter .groupArticles {
+  display: flex;
+  justify-content: space-between;
 }
 footer .footerDireitosAutorais {
   height: 20vh;
@@ -500,12 +551,20 @@ footer .footerDireitosAutorais {
     width: 30%;
   }
 }
-@media (min-width: 1033px) and (max-width: 1409px) {
+@media (max-width: 1409px) {
   .primeiraSection section h2 {
     font-size: 3rem;
   }
   .primeiraSection section p {
     font-size: 1.2rem;
+  }
+}
+@media (max-width: 1139px) {
+  footer .contentFooter article {
+    width: 50%;
+  }
+  footer .caixaFlexivel {
+    align-items: center;
   }
 }
 @media (max-width: 1032px) {
@@ -597,6 +656,35 @@ footer .footerDireitosAutorais {
     width: 80%;
   }
 }
+@media (max-width: 982px) {
+  footer {
+    height: 80vh;
+  }
+  footer .contentFooter {
+    height: 60vh;
+    flex-direction: column;
+  }
+  footer .contentFooter article {
+    height: 20vh;
+  }
+  footer .contentFooter .groupDescription article {
+    flex-direction: row;
+    width: 75%;
+    gap: 0;
+  }
+  footer .contentFooter .groupArticles article {
+    margin-top: 0;
+  }
+  footer .caixaFlexivel {
+    align-items: flex-start;
+    width: 40%;
+  }
+  footer .footerDireitosAutorais {
+    height: 20vh;
+    padding: 1rem;
+    text-align: center;
+  }
+}
 @media (min-width: 501px) and (max-width: 900px) {
   .navHeader ul li a {
     font-size: 1.2rem;
@@ -638,6 +726,15 @@ footer .footerDireitosAutorais {
     width: 50%;
   }
   .comentarios section article {
+    width: 50%;
+  }
+  footer .contentFooter h2 {
+    font-size: 1.2rem;
+  }
+  footer .contentFooter .groupDescription article {
+    width: 90%;
+  }
+  footer .caixaFlexivel {
     width: 50%;
   }
 }
@@ -751,5 +848,22 @@ footer .footerDireitosAutorais {
   .facaParte .containerTitle h2 {
     font-size: 2rem;
     width: 90%;
+  }
+  footer .contentFooter {
+    margin: 0 1rem;
+  }
+  footer .contentFooter .groupDescription article {
+    width: 100%;
+    gap: 10px;
+    flex-direction: column;
+  }
+  footer h2 {
+    font-size: 1.2rem;
+  }
+  footer p, footer h3, footer a {
+    font-size: 0.9rem;
+  }
+  footer .caixaFlexivel {
+    width: 60%;
   }
 }/*# sourceMappingURL=styles.css.map */

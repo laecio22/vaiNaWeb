@@ -522,20 +522,81 @@ header {
 }
 
 footer {
-  background: #1F2937;
-  height: 70vh; 
+  background: #1f2937;
+  height: 60vh;
   display: flex;
   flex-direction: column;
 
+  p,
+  a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #9ca3af;
+  }
+
   .contentFooter {
-     height: 50vh;
+    height: 40vh;
+    display: flex;
+    border-bottom: 2px solid #4b5563;
+    margin: 0 2rem;
+
+    article {
+      width: 40%;
+      height: 30vh;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 50px;
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .boxIconsRedesSociais {
+        display: flex;
+        gap: 12px;
+      }
+    }
+
+    .caixaFlexivel {
+      display: flex;
+      gap: 10px;
+
+      img {
+        width: 12%;
+        min-width: 40px;
+      }
+    }
+
+    h2,
+    h3 {
+      color: #fff;
+    }
+
+    h2 {
+      font-family: "Inter", sans-serif;
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+
+    h3 {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .groupArticles {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   .footerDireitosAutorais {
-     height: 20vh;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -595,7 +656,7 @@ footer {
   }
 }
 
-@media (min-width: 1033px) and (max-width: 1409px) {
+@media (max-width: 1409px) {
   .primeiraSection {
     section {
       h2 {
@@ -605,6 +666,20 @@ footer {
       p {
         font-size: 1.2rem;
       }
+    }
+  }
+}
+
+@media (max-width: 1139px) {
+  footer {
+    .contentFooter {
+      article {
+        width: 50%;
+      }
+    }
+
+    .caixaFlexivel {
+      align-items: center;
     }
   }
 }
@@ -713,9 +788,47 @@ footer {
 
   .facaParte {
     .containerTitle {
-      h3{
+      h3 {
         width: 80%;
       }
+    }
+  }
+}
+
+@media (max-width: 982px) {
+  footer {
+    height: 80vh;
+    .contentFooter {
+      height: 60vh;
+      flex-direction: column;
+      article {
+        height: 20vh;
+      }
+
+      .groupDescription {
+        article {
+          flex-direction: row;
+          width: 75%;
+          gap: 0;
+        }
+      }
+
+      .groupArticles {
+        article {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .caixaFlexivel {
+      align-items: flex-start;
+      width: 40%;
+    }
+
+    .footerDireitosAutorais {
+      height: 20vh;
+      padding: 1rem;
+      text-align: center;
     }
   }
 }
@@ -800,6 +913,24 @@ footer {
       article {
         width: 50%;
       }
+    }
+  }
+
+  footer {
+    .contentFooter {
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      .groupDescription {
+        article {
+          width: 90%;
+        }
+      }
+    }
+
+    .caixaFlexivel {
+      width: 50%;
     }
   }
 }
@@ -960,6 +1091,31 @@ footer {
         font-size: 2rem;
         width: 90%;
       }
+    }
+  }
+
+  footer {
+    .contentFooter {
+      margin: 0 1rem;
+      .groupDescription {
+        article {
+          width: 100%;
+          gap: 10px;
+          flex-direction: column;
+        }
+      }
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    p,h3, a {
+      font-size: 0.9rem;
+    }
+
+    .caixaFlexivel {
+      width: 60%;
     }
   }
 }
