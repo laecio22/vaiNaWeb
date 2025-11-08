@@ -1,0 +1,7 @@
+$font-poppins:"Poppins", sans-serif;
+$font-inter: "Inter", sans-serif;
+
+@mixin definirTamanhoForcaFonte ($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}

@@ -24,8 +24,8 @@ header div {
 }
 header h1 {
   font-size: 2.3rem;
+  font-weight: bold;
   color: #1f2937;
-  font-weight: 700;
 }
 
 .navHeader {
@@ -88,14 +88,14 @@ header h1 {
 }
 .primeiraSection section h2 {
   color: #1f2937;
-  font-weight: 700;
   font-size: 3.5rem;
+  font-weight: bold;
   width: 95%;
 }
 .primeiraSection section p {
   font-family: "Inter", sans-serif;
-  font-weight: 400;
   font-size: 1.3rem;
+  font-weight: 400;
   width: 85%;
   color: #4b5563;
 }
@@ -106,8 +106,8 @@ header h1 {
   width: 80%;
 }
 .boxBtnsPrimeiraSection button {
-  font-weight: 400;
   font-size: 1.1rem;
+  font-weight: 400;
   height: 9vh;
   min-width: 172px;
   display: flex;
@@ -148,12 +148,12 @@ header h1 {
 }
 .estatisticas article h4 {
   color: #16a34a;
-  font-weight: 700;
   font-size: 2.5rem;
+  font-weight: bold;
 }
 .estatisticas article p {
-  font-weight: 400;
   font-size: 1rem;
+  font-weight: 400;
   color: #4b5563;
 }
 
@@ -171,13 +171,13 @@ header h1 {
   width: 80%;
 }
 .funcionamento .containerTitle h2 {
-  font-weight: 700;
   font-size: 2.3rem;
+  font-weight: bold;
 }
 .funcionamento .containerTitle h3 {
   font-family: "Inter", sans-serif;
-  font-weight: 400;
   font-size: 1.3rem;
+  font-weight: 400;
 }
 .funcionamento h2,
 .funcionamento h3 {
@@ -204,8 +204,8 @@ header h1 {
   width: 90%;
 }
 .funcionamento section article p {
-  font-weight: 400;
   font-size: 1rem;
+  font-weight: 400;
   color: #4b5563;
 }
 .funcionamento .caixaFlexivel {
@@ -222,12 +222,12 @@ header h1 {
 }
 .funcionamento .caixaFlexivel h2 {
   font-family: "Inter", sans-serif;
-  font-weight: 400;
   font-size: 1.6rem;
+  font-weight: 400;
 }
 .funcionamento .caixaFlexivel h3 {
   color: #09090b;
-  font-weight: 700;
+  font-weight: bold;
 }
 .funcionamento .tituloParaDoadores {
   color: #16a34a;
@@ -252,29 +252,19 @@ header h1 {
   width: 80%;
 }
 .produtos .containerTitle h2 {
-  font-weight: 700;
   font-size: 2.3rem;
+  font-weight: bold;
   color: #1f2937;
 }
 .produtos .containerTitle h3 {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
   font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
   color: #4b5563;
 }
 .produtos h3,
 .produtos h2 {
   width: 90%;
-}
-.produtos h2 {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 1.6rem;
-  color: #09090b;
-}
-.produtos p {
-  font-size: 1rem;
-  font-weight: 400;
 }
 .produtos section {
   display: flex;
@@ -308,13 +298,23 @@ header h1 {
   border-radius: 6px;
   padding: 0.6rem 1.2rem;
   font-family: "Inter", sans-serif;
-  font-weight: 400;
   font-size: 1rem;
+  font-weight: 400;
   cursor: pointer;
   transition: 0.3s;
 }
 .produtos section article button:hover {
   background-color: #21c05c;
+}
+.produtos section h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #09090b;
+}
+.produtos section p {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .comentarios {
@@ -333,14 +333,13 @@ header h1 {
 }
 .comentarios .containerTitle h2 {
   color: #1f2937;
-  font-weight: 700;
   font-size: 2.3rem;
+  font-weight: bold;
 }
 .comentarios .containerTitle h3 {
   font-family: "Inter", sans-serif;
-  font-weight: 400;
-  color: #4b5563;
   font-size: 1.3rem;
+  font-weight: 400;
 }
 .comentarios section {
   display: flex;
@@ -361,8 +360,8 @@ header h1 {
   width: 50%;
 }
 .comentarios section article p {
-  font-weight: 400;
   font-size: 1rem;
+  font-weight: 400;
 }
 .comentarios .caixaFlexivel {
   display: flex;
@@ -371,15 +370,15 @@ header h1 {
 }
 .comentarios .caixaFlexivel h4 {
   font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
   font-weight: 400;
   color: #09090b;
-  font-size: 0.9rem;
 }
 .comentarios .caixaFlexivel h5 {
   font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
   font-weight: 400;
   color: #6b7280;
-  font-size: 0.9rem;
 }
 .comentarios .caixaFlexivel img {
   width: 15%;
@@ -401,15 +400,15 @@ header h1 {
   gap: 10px;
 }
 .facaParte .containerTitle h2 {
-  color: #000;
-  font-weight: 700;
   font-size: 2.3rem;
+  font-weight: bold;
+  color: #000;
 }
 .facaParte .containerTitle h3 {
   font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
   font-weight: 400;
   color: #000;
-  font-size: 1.3rem;
 }
 .facaParte h2 {
   width: 100%;
@@ -423,12 +422,12 @@ header h1 {
   gap: 15px;
 }
 .facaParte .containerButtons button {
+  font-size: 1rem;
+  font-weight: 400;
   width: 40%;
   min-width: 150px;
   height: 7vh;
   cursor: pointer;
-  font-weight: 400;
-  font-size: 1rem;
   border: none;
   border-radius: 8px;
   display: flex;
@@ -501,16 +500,19 @@ footer .contentFooter h3 {
 }
 footer .contentFooter h2 {
   font-family: "Inter", sans-serif;
-  font-weight: bold;
   font-size: 1.4rem;
+  font-weight: bold;
 }
 footer .contentFooter h3 {
-  font-weight: bold;
   font-size: 1rem;
+  font-weight: bold;
 }
 footer .contentFooter .groupArticles {
   display: flex;
   justify-content: space-between;
+}
+footer .contentFooter .groupDescription article {
+  width: 70%;
 }
 footer .footerDireitosAutorais {
   height: 20vh;
@@ -860,7 +862,9 @@ footer .footerDireitosAutorais {
   footer h2 {
     font-size: 1.2rem;
   }
-  footer p, footer h3, footer a {
+  footer p,
+  footer h3,
+  footer a {
     font-size: 0.9rem;
   }
   footer .caixaFlexivel {

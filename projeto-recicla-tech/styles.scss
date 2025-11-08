@@ -1,3 +1,4 @@
+@use "src/fonts";
 * {
   padding: 0;
   margin: 0;
@@ -5,7 +6,7 @@
   list-style: none;
   text-decoration: none;
   color: #4b5563;
-  font-family: "Poppins", sans-serif;
+  font-family: fonts.$font-poppins;
 }
 
 header {
@@ -24,9 +25,8 @@ header {
   }
 
   h1 {
-    font-size: 2.3rem;
+    @include fonts.definirTamanhoForcaFonte(2.3rem, bold);
     color: #1f2937;
-    font-weight: 700;
   }
 }
 
@@ -97,15 +97,13 @@ header {
 
     h2 {
       color: #1f2937;
-      font-weight: 700;
-      font-size: 3.5rem;
+      @include fonts.definirTamanhoForcaFonte(3.5rem, bold);
       width: 95%;
     }
 
     p {
-      font-family: "Inter", sans-serif;
-      font-weight: 400;
-      font-size: 1.3rem;
+      font-family: fonts.$font-inter;
+      @include fonts.definirTamanhoForcaFonte(1.3rem, 400);
       width: 85%;
       color: #4b5563;
     }
@@ -118,8 +116,7 @@ header {
   width: 80%;
 
   button {
-    font-weight: 400;
-    font-size: 1.1rem;
+    @include fonts.definirTamanhoForcaFonte(1.1rem, 400);
     height: 9vh;
     min-width: 172px;
     display: flex;
@@ -160,20 +157,14 @@ header {
 
   article {
     text-align: center;
-    // display: flex;
-    // flex-direction: column;
-    // gap: 25px;
-    // align-items: center;
 
     h4 {
       color: #16a34a;
-      font-weight: 700;
-      font-size: 2.5rem;
+      @include fonts.definirTamanhoForcaFonte(2.5rem, bold);
     }
 
     p {
-      font-weight: 400;
-      font-size: 1rem;
+      @include fonts.definirTamanhoForcaFonte(1rem, 400);
       color: #4b5563;
     }
   }
@@ -193,14 +184,12 @@ header {
     width: 80%;
 
     h2 {
-      font-weight: 700;
-      font-size: 2.3rem;
+      @include fonts.definirTamanhoForcaFonte(2.3rem, bold);
     }
 
     h3 {
-      font-family: "Inter", sans-serif;
-      font-weight: 400;
-      font-size: 1.3rem;
+      font-family: fonts.$font-inter;
+      @include fonts.definirTamanhoForcaFonte(1.3rem, 400);
     }
   }
 
@@ -231,8 +220,7 @@ header {
       }
 
       p {
-        font-weight: 400;
-        font-size: 1rem;
+        @include fonts.definirTamanhoForcaFonte(1rem, 400);
         color: #4b5563;
       }
     }
@@ -253,14 +241,13 @@ header {
     }
 
     h2 {
-      font-family: "Inter", sans-serif;
-      font-weight: 400;
-      font-size: 1.6rem;
+      font-family: fonts.$font-inter;
+      @include fonts.definirTamanhoForcaFonte(1.6rem, 400);
     }
 
     h3 {
       color: #09090b;
-      font-weight: 700;
+      font-weight: bold;
     }
   }
 
@@ -290,15 +277,13 @@ header {
     width: 80%;
 
     h2 {
-      font-weight: 700;
-      font-size: 2.3rem;
+      @include fonts.definirTamanhoForcaFonte(2.3rem, bold);
       color: #1f2937;
     }
 
     h3 {
-      font-family: "Inter", sans-serif;
-      font-weight: 400;
-      font-size: 1.3rem;
+      @include fonts.definirTamanhoForcaFonte(1.3rem, 400);
+      font-family: fonts.$font-inter;
       color: #4b5563;
     }
   }
@@ -306,18 +291,6 @@ header {
   h3,
   h2 {
     width: 90%;
-  }
-
-  h2 {
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-size: 1.6rem;
-    color: #09090b;
-  }
-
-  p {
-    font-size: 1rem;
-    font-weight: 400;
   }
 
   section {
@@ -352,9 +325,8 @@ header {
         height: 40px;
         border-radius: 6px;
         padding: 0.6rem 1.2rem;
-        font-family: "Inter", sans-serif;
-        font-weight: 400;
-        font-size: 1rem;
+        font-family: fonts.$font-inter;
+        @include fonts.definirTamanhoForcaFonte(1rem, 400);        
         cursor: pointer;
         transition: 0.3s;
 
@@ -362,6 +334,17 @@ header {
           background-color: #21c05c;
         }
       }
+    }
+
+    h2 {
+      font-family: fonts.$font-inter;
+      @include fonts.definirTamanhoForcaFonte(1.6rem, 500);  
+      color: #09090b;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 400;
     }
   }
 }
@@ -381,15 +364,12 @@ header {
     gap: 10px;
     h2 {
       color: #1f2937;
-      font-weight: 700;
-      font-size: 2.3rem;
+      @include fonts.definirTamanhoForcaFonte(2.3rem, bold);   
     }
 
     h3 {
-      font-family: "Inter", sans-serif;
-      font-weight: 400;
-      color: #4b5563;
-      font-size: 1.3rem;
+      font-family: fonts.$font-inter;
+      @include fonts.definirTamanhoForcaFonte(1.3rem,400);   
     }
   }
 
@@ -412,8 +392,7 @@ header {
       }
 
       p {
-        font-weight: 400;
-        font-size: 1rem;
+        @include fonts.definirTamanhoForcaFonte(1rem, 400);     
       }
     }
   }
@@ -424,17 +403,15 @@ header {
     gap: 15px;
 
     h4 {
-      font-family: "Inter", sans-serif;
-      font-weight: 400;
-      color: #09090b;
-      font-size: 0.9rem;
+      font-family: fonts.$font-inter;
+      @include fonts.definirTamanhoForcaFonte(0.9rem, 400);
+      color: #09090b;    
     }
 
     h5 {
-      font-family: "Inter", sans-serif;
-      font-weight: 400;
-      color: #6b7280;
-      font-size: 0.9rem;
+      font-family: fonts.$font-inter;
+      @include fonts.definirTamanhoForcaFonte(0.9rem, 400);
+      color: #6b7280;     
     }
 
     img {
@@ -459,16 +436,14 @@ header {
     gap: 10px;
 
     h2 {
-      color: #000;
-      font-weight: 700;
-      font-size: 2.3rem;
+      @include fonts.definirTamanhoForcaFonte(2.3rem, bold);
+      color: #000;     
     }
 
     h3 {
-      font-family: "Inter", sans-serif;
-      font-weight: 400;
+      font-family: fonts.$font-inter;
+      @include fonts.definirTamanhoForcaFonte(1.3rem, 400);     
       color: #000;
-      font-size: 1.3rem;
     }
   }
 
@@ -486,12 +461,11 @@ header {
     gap: 15px;
 
     button {
+      @include fonts.definirTamanhoForcaFonte(1rem,400);
       width: 40%;
       min-width: 150px;
       height: 7vh;
-      cursor: pointer;
-      font-weight: 400;
-      font-size: 1rem;
+      cursor: pointer;     
       border: none;
       border-radius: 8px;
       display: flex;
@@ -529,8 +503,7 @@ footer {
 
   p,
   a {
-    font-size: 1rem;
-    font-weight: 400;
+    @include fonts.definirTamanhoForcaFonte(1rem, 400);   
     color: #9ca3af;
   }
 
@@ -576,19 +549,23 @@ footer {
     }
 
     h2 {
-      font-family: "Inter", sans-serif;
-      font-weight: bold;
-      font-size: 1.4rem;
+      font-family: fonts.$font-inter;
+      @include fonts.definirTamanhoForcaFonte(1.4rem, bold);      
     }
 
     h3 {
-      font-weight: bold;
-      font-size: 1rem;
+      @include fonts.definirTamanhoForcaFonte(1rem, bold);    
     }
 
     .groupArticles {
       display: flex;
       justify-content: space-between;
+    }
+
+    .groupDescription {
+      article {
+        width: 70%;
+      }
     }
   }
 
@@ -1110,7 +1087,9 @@ footer {
       font-size: 1.2rem;
     }
 
-    p,h3, a {
+    p,
+    h3,
+    a {
       font-size: 0.9rem;
     }
 
