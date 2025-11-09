@@ -1,4 +1,5 @@
 @use "src/fonts";
+@use "src/position";
 * {
   padding: 0;
   margin: 0;
@@ -176,26 +177,9 @@ header {
   flex-direction: column;
   justify-content: space-evenly;
 
-  .containerTitle {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 0 auto;
-    width: 80%;
-
-    h2 {
-      @include fonts.definirTamanhoForcaFonte(2.3rem, bold);
-    }
-
-    h3 {
-      font-family: fonts.$font-inter;
-      @include fonts.definirTamanhoForcaFonte(1.3rem, 400);
-    }
-  }
-
   h2,
   h3 {
-    width: 75%;
+    width: 80%;
     color: #1f2937;
   }
 
@@ -205,14 +189,12 @@ header {
     justify-content: space-evenly;
 
     article {
+      @include position.definirContainerFlexivelColuna();
       background-color: #f3f5f8;
       border-radius: 10px;
       height: 60vh;
       width: 35%;
-      display: flex;
-      flex-direction: column;
       justify-content: space-evenly;
-      align-items: center;
 
       div,
       p {
@@ -261,36 +243,18 @@ header {
 }
 
 .produtos {
+  @include position.definirContainerFlexivelColuna();
   height: 75vh;
-  display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
+  background-color: #f3f5f8; 
 
-  background-color: #f3f5f8;
-  align-items: center;
-
-  .containerTitle {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 0 auto;
-    width: 80%;
-
-    h2 {
-      @include fonts.definirTamanhoForcaFonte(2.3rem, bold);
-      color: #1f2937;
-    }
-
-    h3 {
-      @include fonts.definirTamanhoForcaFonte(1.3rem, 400);
-      font-family: fonts.$font-inter;
-      color: #4b5563;
-    }
+  h2 {
+    color: #1f2937;
   }
 
   h3,
   h2 {
-    width: 90%;
+    width: 100%;
   }
 
   section {
@@ -300,10 +264,8 @@ header {
     height: 50vh;
 
     article {
+      @include position.definirContainerFlexivelColuna();
       width: 20%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       height: 50vh;
       padding-bottom: 2rem;
       justify-content: space-between;
@@ -326,7 +288,7 @@ header {
         border-radius: 6px;
         padding: 0.6rem 1.2rem;
         font-family: fonts.$font-inter;
-        @include fonts.definirTamanhoForcaFonte(1rem, 400);        
+        @include fonts.definirTamanhoForcaFonte(1rem, 400);
         cursor: pointer;
         transition: 0.3s;
 
@@ -338,39 +300,23 @@ header {
 
     h2 {
       font-family: fonts.$font-inter;
-      @include fonts.definirTamanhoForcaFonte(1.6rem, 500);  
+      @include fonts.definirTamanhoForcaFonte(1.6rem, 500);
       color: #09090b;
     }
 
     p {
-      font-size: 1rem;
-      font-weight: 400;
+      @include fonts.definirTamanhoForcaFonte(1rem, 400);
     }
   }
 }
 
 .comentarios {
+  @include position.definirContainerFlexivelColuna();
   height: 90vh;
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  align-items: center;
 
-  .containerTitle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    h2 {
-      color: #1f2937;
-      @include fonts.definirTamanhoForcaFonte(2.3rem, bold);   
-    }
-
-    h3 {
-      font-family: fonts.$font-inter;
-      @include fonts.definirTamanhoForcaFonte(1.3rem,400);   
-    }
+  h2 {
+    color: #1f2937;
   }
 
   section {
@@ -392,7 +338,7 @@ header {
       }
 
       p {
-        @include fonts.definirTamanhoForcaFonte(1rem, 400);     
+        @include fonts.definirTamanhoForcaFonte(1rem, 400);
       }
     }
   }
@@ -405,13 +351,13 @@ header {
     h4 {
       font-family: fonts.$font-inter;
       @include fonts.definirTamanhoForcaFonte(0.9rem, 400);
-      color: #09090b;    
+      color: #09090b;
     }
 
     h5 {
       font-family: fonts.$font-inter;
       @include fonts.definirTamanhoForcaFonte(0.9rem, 400);
-      color: #6b7280;     
+      color: #6b7280;
     }
 
     img {
@@ -423,28 +369,12 @@ header {
 .facaParte {
   background-color: #f3f5f8;
   height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include position.definirContainerFlexivelColuna();
   justify-content: space-around;
 
-  .containerTitle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-    h2 {
-      @include fonts.definirTamanhoForcaFonte(2.3rem, bold);
-      color: #000;     
-    }
-
-    h3 {
-      font-family: fonts.$font-inter;
-      @include fonts.definirTamanhoForcaFonte(1.3rem, 400);     
-      color: #000;
-    }
+  h2,
+  h3 {
+    color: #000;
   }
 
   h2 {
@@ -461,11 +391,11 @@ header {
     gap: 15px;
 
     button {
-      @include fonts.definirTamanhoForcaFonte(1rem,400);
+      @include fonts.definirTamanhoForcaFonte(1rem, 400);
       width: 40%;
       min-width: 150px;
       height: 7vh;
-      cursor: pointer;     
+      cursor: pointer;
       border: none;
       border-radius: 8px;
       display: flex;
@@ -503,7 +433,7 @@ footer {
 
   p,
   a {
-    @include fonts.definirTamanhoForcaFonte(1rem, 400);   
+    @include fonts.definirTamanhoForcaFonte(1rem, 400);
     color: #9ca3af;
   }
 
@@ -550,11 +480,11 @@ footer {
 
     h2 {
       font-family: fonts.$font-inter;
-      @include fonts.definirTamanhoForcaFonte(1.4rem, bold);      
+      @include fonts.definirTamanhoForcaFonte(1.4rem, bold);
     }
 
     h3 {
-      @include fonts.definirTamanhoForcaFonte(1rem, bold);    
+      @include fonts.definirTamanhoForcaFonte(1rem, bold);
     }
 
     .groupArticles {
@@ -583,6 +513,11 @@ footer {
       width: 85%;
     }
 
+    h3,
+    h2 {
+      width: 85%;
+    }
+
     section {
       article {
         width: 40%;
@@ -597,7 +532,7 @@ footer {
 
     h3,
     h2 {
-      width: 80%;
+      width: 100%;
     }
 
     p {
@@ -610,15 +545,12 @@ footer {
 
         button {
           width: 60%;
-          // height: 40px;
         }
       }
     }
   }
 }
-
 //responsividade para  header
-
 @media (max-width: 1410px) {
   .navHeader {
     width: 65%;
@@ -646,7 +578,6 @@ footer {
     }
   }
 }
-
 @media (max-width: 1139px) {
   footer {
     .contentFooter {
@@ -660,7 +591,6 @@ footer {
     }
   }
 }
-
 //responsividade  pontual  para  o tamanho da  seção  principal
 @media (max-width: 1032px) {
   .primeiraSection {
@@ -672,7 +602,6 @@ footer {
     }
   }
 }
-
 @media (max-width: 1000px) {
   header {
     flex-direction: column;
@@ -705,7 +634,7 @@ footer {
     row-gap: 30px;
     justify-content: center;
     .containerTitle {
-      width: 80%;
+      width: 100%;
       text-align: center;
       align-items: center;
     }
@@ -771,7 +700,6 @@ footer {
     }
   }
 }
-
 @media (max-width: 982px) {
   footer {
     height: 80vh;
@@ -809,9 +737,7 @@ footer {
     }
   }
 }
-
 //responsividade tablet
-
 @media (min-width: 501px) and (max-width: 900px) {
   .navHeader {
     ul {
@@ -911,7 +837,6 @@ footer {
     }
   }
 }
-
 //responsividade mobile
 @media (min-width: 201px) and (max-width: 500px) {
   header {

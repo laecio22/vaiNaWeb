@@ -1,0 +1,22 @@
+
+@use 'fonts';
+@mixin definirContainerFlexivelColuna(){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerTitle {
+    @include definirContainerFlexivelColuna();  
+    justify-content: center;
+    gap: 10px;
+    width: 80%;
+    h2 {    
+      @include fonts.definirTamanhoForcaFonte(2.3rem, bold);
+    }
+
+    h3 {
+      font-family: fonts.$font-inter;
+      @include fonts.definirTamanhoForcaFonte(1.3rem, 400);
+    }
+  }
