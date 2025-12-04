@@ -1,7 +1,11 @@
+import Main from './components/main/Main'
+import './globalStyles.scss'
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+       <Main/>
+    </>
   )
 }
 
