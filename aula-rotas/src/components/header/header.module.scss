@@ -1,0 +1,14 @@
+.header {
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
+
+  nav {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
