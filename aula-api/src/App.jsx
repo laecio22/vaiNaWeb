@@ -9,6 +9,7 @@ const App = () => {
       try {
         const dados =  await axios.get('https://fakestoreapi.com/products')
         setProdutos(dados.data)
+        //teste
       //  console.log(dados, 'dados')
         
       } catch (error) {
