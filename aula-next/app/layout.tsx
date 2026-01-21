@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Button from "./_components/button";
 
 
 
@@ -17,7 +18,9 @@ export default function RootLayout({
       <body
         className={` antialiased`}
       >
+        <Button/>
         {children}
+
       </body>
     </html>
   );
