@@ -82,4 +82,29 @@ app.put("/posts/:id", async (req, res) => {
   }
 });
 
+//rota  deletar  post
+
+app.delete("/posts/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+    const resultado = await pool.query(
+      `
+           DELETE FROM post WHERE id=$1
+           RETURNING *
+         `,
+      [id],
+    );
+
+    res.json({
+      mensagem: "Post  deletado  com sucesso!",
+      post: resultado.rows[0]
+    });
+  } catch (error) {
+    res.status(500).json({
+      erro: "Não  foi possível  deletar  o  post",
+      post: resultado.rows[0],
+    });
+  }
+});
+
 module.exports = app;
