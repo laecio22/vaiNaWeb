@@ -9,12 +9,14 @@ app.get("/", (req, res) => {
   res.send("<h1>Rede Social!</h1>");
 });
 
+//rota  listar posts
 app.get("/posts", async (req, res) => {
   try {
     const resultado = await pool.query(`
         SELECT
           usuarios.id, 
           usuarios.nome,
+          post.titulo,
           post.conteudo,
           post.criado_em,
           post.id AS post_id
@@ -32,6 +34,7 @@ app.get("/posts", async (req, res) => {
   }
 });
 
+//rota  criar post
 app.post("/posts", async (req, res) => {
   try {
     const { titulo, conteudo, usuario_id } = req.body;
@@ -51,6 +54,30 @@ app.post("/posts", async (req, res) => {
   } catch (error) {
     res.status(500).json({
       erro: "Erro ao   criar postagem",
+    });
+  }
+});
+
+//rota  atualizar  post
+app.put("/posts/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { titulo, conteudo } = req.body;
+    //comando sql  para atualizar  um post
+    const resultado = await pool.query(
+      `
+           UPDATE post SET titulo=$1, conteudo=$2  WHERE id=$3
+           RETURNING *
+        `,
+      [titulo, conteudo, id],
+    );
+    res.status(200).json({
+      mensagem: "Post  atualizado  com  sucesso!",
+      post: resultado.rows[0],
+    });
+  } catch (error) {
+    res.status(500).json({
+      erro: "Não  foi  possível  atualizar  o post",
     });
   }
 });
