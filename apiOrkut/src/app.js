@@ -1,5 +1,6 @@
 const express = require("express");
 const pool = require("./config/db");
+const validarPost = require("./validacao/post")
 
 const app = express();
 
@@ -35,7 +36,7 @@ app.get("/posts", async (req, res) => {
 });
 
 //rota  criar post
-app.post("/posts", async (req, res) => {
+app.post("/posts", validarPost, async (req, res) => {
   try {
     const { titulo, conteudo, usuario_id } = req.body;
     const resultado = await pool.query(
@@ -59,7 +60,7 @@ app.post("/posts", async (req, res) => {
 });
 
 //rota  atualizar  post
-app.put("/posts/:id", async (req, res) => {
+app.put("/posts/:id", validarPost, async (req, res) => {
   try {
     const { id } = req.params;
     const { titulo, conteudo } = req.body;
