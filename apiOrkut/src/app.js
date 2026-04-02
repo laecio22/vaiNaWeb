@@ -1,10 +1,57 @@
+require("dotenv").config();
 const express = require("express");
 const pool = require("./config/db");
-const validarPost = require("./validacao/post")
+const validarPost = require("./validacao/post");
+const auth = require("./auth/authLogin");
+const jwt = require("jsonwebtoken");
 
 const app = express();
 
 app.use(express.json());
+
+//rota login
+app.post("/login", async (req, res) => {
+  const { email, senha } = req.body;
+  try {
+    const usuario = await pool.query(
+      `
+         SELECT *  FROM usuarios  WHERE email=$1        
+        `,
+      [email],
+    );
+
+    if (usuario.rows.length === 0) {
+      return res.status(400).json({
+        mensagem: "Usuário  não  encontrado",
+      });
+    }
+
+    if (senha !== usuario.rows[0].senha) {
+      return res.status(400).json({
+        mensagem: "Senha  inválida",
+      });
+    }
+
+    const token = jwt.sign(
+      {
+        id: usuario.rows[0].id,
+      },
+      process.env.JWT_KEY_SECRET,
+      { expiresIn: "1h" },
+    );
+
+    console.log("login secreto", process.env.JWT_KEY_SECRET);
+
+    res.json({
+      token,
+    });
+  } catch (error) {
+    console.log("erro no login", error);
+    res.status(500).json({
+      mensagem: "Erro  interno do  servidor",
+    });
+  }
+});
 
 app.get("/", (req, res) => {
   res.send("<h1>Rede Social!</h1>");
@@ -36,9 +83,9 @@ app.get("/posts", async (req, res) => {
 });
 
 //rota  criar post
-app.post("/posts", validarPost, async (req, res) => {
+app.post("/posts", auth, validarPost, async (req, res) => {
   try {
-    const { titulo, conteudo, usuario_id } = req.body;
+    const { titulo, conteudo } = req.body;
     const resultado = await pool.query(
       `
         INSERT INTO post (
@@ -46,7 +93,7 @@ app.post("/posts", validarPost, async (req, res) => {
         ) VALUES($1, $2, $3)
          RETURNING *
       `,
-      [titulo, conteudo, usuario_id],
+      [titulo, conteudo, req.usuario.id],
     );
     res.status(201).json({
       mensagem: "Post  criado com sucesso!",
@@ -98,7 +145,7 @@ app.delete("/posts/:id", async (req, res) => {
 
     res.json({
       mensagem: "Post  deletado  com sucesso!",
-      post: resultado.rows[0]
+      post: resultado.rows[0],
     });
   } catch (error) {
     res.status(500).json({
